@@ -1,0 +1,42 @@
+<meta charset="utf-8">
+
+	<b><h1>PROGRAM CALCULATE BODY MASS INDEX</h1></b>
+	<head>
+		<link href="styles.css" rel="stylesheet">
+	</head>
+
+<script>
+
+	function saltarlinea() {
+
+	document.write("<br>")
+
+	}
+
+
+	function imprimir(frase) {
+
+		document.write(frase)
+		saltarlinea()
+	}
+
+	function calcularimc(peso,altura) {
+		imc= peso / (altura + altura)
+		return(imc);
+
+
+	}
+
+	pesoOliver = 71;
+	alturaOliver = 1.72;
+	imcOliver= calcularimc(pesoOliver, alturaOliver);
+	imprimir ("The BMI of Oliver is: " + Math.round(imcOliver));
+
+	saltarlinea()
+
+	pesoHenry = 75;
+	alturaHenry = 1.73;
+	imcHenry= calcularimc(pesoHenry, alturaHenry);
+	imprimir("The BMI of Henry is: " + Math.round(imcHenry));
+
+</script>
