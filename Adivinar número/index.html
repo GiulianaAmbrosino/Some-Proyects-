@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es-ar">
+<head>
+	<meta charset="UTF-8">
+	<title>Adiviná el número</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Adiviná el número</h1>
+	</header>
+	<main>
+		<p>Estoy pensando en un número entre 1 y 100. ¿Podés adivinar cuál es?</p>
+		<form>
+			<label for="guess">Tu conjetura:</label>
+			<input type="number" id="guess" name="guess" min="1" max="100" required>
+			<button type="submit">Adivinar</button>
+		</form>
+		<div id="result"></div>
+	</main>
+	<script src="game.js"></script>
+</body>
+</html>
